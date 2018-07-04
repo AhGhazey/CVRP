@@ -1,0 +1,36 @@
+<problem>
+	<Updatepolicy>NewRandomSweep</Updatepolicy>
+	<Population>10,10</Population>
+	<EvaluationLimit>10000</EvaluationLimit>
+	<Neighborhood>Compact13</Neighborhood>
+	<Mutation>
+		<Type>InsertionMutation</Type>
+		<MutationProbability>0.2</MutationProbability>
+	</Mutation>
+	<Crossover>
+		<Type>EAX</Type>
+		<CrossoverProbability>0.8</CrossoverProbability>
+	</Crossover>
+	<SelectionParent1>TournamentSelection</SelectionParent1>
+	<SelectionParent2>CenterSelection</SelectionParent2>
+	<Replacement>
+		<ReplacementType>ReplaceIfNonWorse</ReplacementType>
+		<RFactor>0.012</RFactor>
+	</Replacement>
+	
+	<NumberOfVehicles>5</NumberOfVehicles>
+	<overTime>500000</overTime>
+	<overCapacity>100</overCapacity>
+	<NumberOfCustomers>31</NumberOfCustomers>
+	<costTable>null</costTable>
+	<coordinate>coordinate2.txt</coordinate>
+	<CustomersDemand>0,19,21,6,19,7,12,16,6,16,8,14,21,16,3,22,18,19,1,24,8,12,4,8,24,24,2,20,15,2,14,9 </CustomersDemand>
+	<DropTime>0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0</DropTime>
+	<LocalSearch>
+		<Type>opt</Type>
+		<MaxSteps>5</MaxSteps>
+		<MaxTempreture>10</MaxTempreture>
+		<MinTempreture>1</MinTempreture>
+		<CoolingRate>0.8</CoolingRate>
+	</LocalSearch>
+</problem>
